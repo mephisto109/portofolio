@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amameng</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <meta name="description" content="Personal portfolio — websites, illustration, and crochet.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <img src="images/logo.png" alt="Amameng logo" class="nav-logo-img">
+        <span>Amameng<span class="dot">.</span></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active" data-section="home">Home</a>
+        <a href="#about" class="nav-link" data-section="about">About</a>
+        <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+        <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+        <a href="https://rahmakhoyrul-crud-php.sao.dom.my.id/" class="nav-link" data-section="contact">Login</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <div class="hero-text reveal">
+          <p class="eyebrow">// 12th grade student — software &amp; game development</p>
+          <h1 class="hero-title">Hi, I'm <span class="grad-text">Rahma</span>.</h1>
+          <p class="hero-desc">A vocational high school student majoring in Software and Game Development (RPL) at SMK
+            Negeri 2 Cimahi, exploring web development while crafting by hand through my small crochet brand,
+            <strong>Freaknit</strong>.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-ghost">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="hero-portrait">
+            <img src="images/rahma-portrait.png" alt="Illustrated portrait of Rahma">
+          </div>
+        </div>
+      </div>
+      <!--<div class="scroll-cue" aria-hidden="true"><span></span></div>-->
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about" id="about">
+      <div class="about-inner">
+        <div class="about-visual reveal">
+          <div class="about-photo">
+            <div><img src="images/rahma-photo.png" alt="photo-desc" class="avatar-placeholder large"></div>
+          </div>
+          <div class="about-card-float">
+            <p class="mono-label">status</p>
+            <p>Learning &amp; creating every day </p>
+          </div>
+        </div>
+        <div class="about-content reveal">
+          <p class="eyebrow">// about me</p>
+          <h2>Nice to meet you.</h2>
+          <p class="about-text">
+            Hi! I'm <strong>Rahma Khoyrul Hawa</strong>, a 12th-grade vocational high school student majoring in
+            <strong>Software and Game
+              Development (RPL) at SMK Negeri 2 Cimahi.</strong> I'm passionate about programming and currently
+            expanding my skills
+            in web development by learning new technologies and building projects that help me grow as a developer.
+          </p>
+          <p class="about-text">
+            Beyond coding, I enjoy drawing, crocheting, and creating handmade crafts. I also run a small crochet brand
+            called <strong>Freaknit</strong>, where I turn creative ideas into handmade products. I believe technology and creativity go
+            hand in hand, and I'm always excited to keep learning while creating meaningful and visually engaging work.
+          </p>
+          <div class="about-tags">
+            <span>Web Development</span>
+            <span>Game Development</span>
+            <span>Illustration</span>
+            <span>Crochet — Freaknit</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-skills reveal">
+        <p class="mono-label">tools &amp; skills</p>
+        <div class="skills-grid" id="skillsGrid"></div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="projects" id="projects">
+      <div class="section-head reveal">
+        <p class="eyebrow">// projects</p>
+        <h2>Website Projects</h2>
+      </div>
+      <div class="projects-grid" id="projectsGrid"></div>
+    </section>
+
+    <!-- ===== GALLERY ===== -->
+    <section class="gallery gallery-removed" id="gallery" aria-hidden="true"></section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact" id="contact">
+      <div class="contact-inner">
+        <div class="contact-info reveal">
+          <p class="eyebrow">// get in touch</p>
+          <h2>Let's talk.</h2>
+          <p class="contact-desc">Got a project, a collaboration, or just want to say hi? Send a message
+            through the form, or reach out directly through one of the channels below.</p>
+          <ul class="contact-links" id="contactLinks"></ul>
+        </div>
+
+        <form action="https://formspree.io/f/mrenarpj" method="post"   novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name">
+            <span class="error-msg" id="nameError"></span>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@email.com">
+            <span class="error-msg" id="emailError"></span>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..."></textarea>
+            <span class="error-msg" id="messageError"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+          <p class="form-success" id="formSuccess">Message sent! Thanks for reaching out 🤍</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <a href="#home" class="nav-logo">Rahma<span class="dot">.</span></a>
+      <p class="footer-copy">&copy; <span id="year"></span> Rahma Khoyrul Hawa. Made with &#9825;</p>
+      <div class="footer-social" id="footerSocial"></div>
+      <button class="back-to-top" id="backToTop" aria-label="Back to top">&#8593;</button>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
