@@ -259,22 +259,6 @@ section{ position: relative; padding: 110px 24px; }
   background: var(--white); border:1px solid var(--line); color: var(--purple-700);
 }
 
-/* skills, nested inside About */
-.about-skills{
-  max-width: var(--max-w); margin: 56px auto 0;
-  padding-top: 40px; border-top: 1px solid var(--line);
-}
-.about-skills .mono-label{ margin-bottom: 18px; font-size:0.78rem; }
-.skills-grid{
-  display:grid; grid-template-columns: repeat(auto-fit, minmax(110px,1fr)); gap: 16px;
-}
-.skill-card{
-  background: var(--white); border:1px solid var(--line); border-radius: var(--radius-md);
-  padding: 16px 12px; text-align:center; transition: border-color .2s ease;
-}
-.skill-card:hover{ border-color: var(--purple-400); }
-.skill-name{ font-size:0.85rem; font-weight:600; color: var(--ink); }
-
 /* =========================================================
    GALLERY / CAROUSEL
    ========================================================= */

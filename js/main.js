@@ -16,7 +16,6 @@ const ICONS = {
 
 document.addEventListener("DOMContentLoaded", () => {
   renderProjects();
-  renderSkills();
   renderContact();
   renderFooterSocial();
 
@@ -55,16 +54,6 @@ function projectCardHTML(p){
         ${(demoBtn || codeBtn) ? `<div class="project-actions">${demoBtn}${codeBtn}</div>` : ""}
       </div>
     </article>`;
-}
-
-/* ---------- RENDER: SKILLS ---------- */
-function renderSkills(){
-  const grid = document.getElementById("skillsGrid");
-  grid.innerHTML = SKILLS.map(s => `
-    <div class="skill-card reveal">
-      <div class="skill-icon"><i class="bi ${s.icon}"></i></div>
-      <div class="skill-name">${s.name}</div>
-    </div>`).join("");
 }
 
 /* ---------- RENDER: GALLERY / CAROUSEL SLIDES ---------- */

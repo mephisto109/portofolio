@@ -26,7 +26,6 @@ Open `js/data.js`, then:
   that button hides itself automatically.
 - **Add an artwork / craft product** → add a new object to the `GALLERY` array.
 - **Update contact info** → edit the `CONTACT_LINKS` array.
-- **Update the skills list** → edit the `SKILLS` array.
 
 ## Replacing placeholders with real photos
 

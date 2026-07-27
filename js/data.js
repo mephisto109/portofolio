@@ -17,20 +17,6 @@ const CONTACT_LINKS = [
   //{ label: "WhatsApp",  value: "+62 812-0000-0000",         href: "https://wa.me/6281200000000",          icon: "whatsapp" },
 ];
 
-// ---------- SKILLS ----------
-// icon berisi nama class dari Bootstrap Icons (https://icons.getbootstrap.com/)
-const SKILLS = [
-  { name: "HTML" },
-  { name: "CSS" },
-  { name: "JavaScript" },
-  { name: "PHP" },
-  { name: "MySQL" },
-  { name: "Tailwind CSS" },
-  { name: "Figma" },
-  { name: "UI Design" },
-  { name: "Git" },
-];
-
 // ---------- PROJECTS ----------
 // Leave demoUrl / githubUrl as "" when there isn't a link yet — the button hides itself automatically.
 const PROJECTS = [
@@ -61,7 +47,7 @@ const PROJECTS = [
     year: "2026",
     // thumbnailIcon: "bi-magic",
     thumbnailImage: "images/famiresu.jpg",
-    demoUrl: "",
+    demoUrl: "https://youtu.be/Qdy9Zzl9owY?si=2uzdbxFcrNh2ib91",
     githubUrl: "https://github.com/mephisto109/apk-kasir-restauran-berbasis-web---Tugas-akhir---Rahma.git",
   },
   // {
